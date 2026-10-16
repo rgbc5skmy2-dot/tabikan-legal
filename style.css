@@ -1,0 +1,140 @@
+:root {
+  --bg: #F6F5F2;
+  --card: #FFFFFF;
+  --text: #1C1C1E;
+  --text-secondary: #3A3A3C;
+  --text-tertiary: #8C8984;
+  --border: #E4E0D9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.brand .logo {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.brand .tagline {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--text-tertiary);
+  margin: 6px 0 0;
+}
+
+.lang {
+  text-align: right;
+  font-size: 13px;
+  margin: -24px 0 24px;
+}
+
+.lang a { color: var(--text-secondary); }
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin: 0 0 24px;
+}
+
+.lead {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+section { margin-top: 28px; }
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+section p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 64px 0 48px;
+}
+
+.nav {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 14px;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover { text-decoration: underline; }
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.home-links a {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.home-links a span {
+  display: block;
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+
+.home-links a:hover { border-color: var(--text); }
+
+.contact {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
